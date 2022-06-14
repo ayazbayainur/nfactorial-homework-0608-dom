@@ -1,0 +1,152 @@
+/* body {
+    background-color: peachpuff;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .background {
+      display: flex;
+      justify-content: center;
+      background-color: red;
+      justify-self: center;
+      align-self:center ;
+  }
+  body {
+    height: 100vh;
+    padding: 0;
+    margin:0;
+    background-color: transparent;
+  }
+  
+
+  .container {
+    /* position: relative; */
+    position: fixed;
+    background: rgba(255, 0, 0, 0);
+    bottom: 1;
+    color: #f1f1f1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  
+  .hidden {
+    display: block;
+  }
+  .shown {
+    display: flex;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 18%;
+    align-items: center;
+  }
+  .center{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 50%; 
+    min-height: 50%;
+    display:flex;
+    /* justify-content: center; */
+    align-self: center;
+    justify-self: center;
+  }
+  
+  #btn-change-background {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .playpause-track {
+    margin: 30px;
+  }
+  
+  
+  .progress-bar {
+    grid-area: four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  
+  #progressBar {
+    appearance: none;
+    height: 5px;
+    background: white;
+    width: 57.5%;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  #progressBar::-webkit-slider-thumb {
+    appearance: none;
+    height: 11px;
+    width: 11px;
+    outline: none;
+    background: #f94c57;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .track-time {
+    grid-area: five;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+  }
+  
+  #currentTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  #durationTime {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #f94c57;
+    text-shadow: 0 0 15px white;
+  }
